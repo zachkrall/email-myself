@@ -1,1 +1,1 @@
-# email-myself
+email myself every morning :)
