@@ -1,32 +1,17 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
+  "name": "email-myself",
   "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "echo nope"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
-    "express": "^4.16.3",
+    "html2plaintext": "^2.0.1",
     "moment": "^2.22.1",
+    "mta-service-status": "0.0.1",
     "nodemailer": "^4.6.4",
-    "weather": "^0.1.0",
     "yahoo-weather": "^2.2.2"
-  },
-  "engines": {
-    "node": "8.x"
-  },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  }
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Email Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+  *{
+    margin:0 auto;padding:0;
+  }
+  body{
+    font-family:sans-serif;
+  }
+  b{
+    color:#9A9A9A;
+  }
+</style>
+</head>
+<body>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600px" style="border-collapse: collapse;">
+<tr>
+ <td style="padding:30px 0;">
+  <span>${todayIs}</span>
+  <h1 style="color:#0000FF;">Today is going to be amazing.</h1>
+ </td>
+</tr>
+<tr>
+ <td>
+
+  It is currently <b>${forecast.temp}</b> (${forecast.condition}).
+
+</td></tr>
+<tr><td style="padding:40px 0;">
+  <b>High</b><br>${forecast.high}
+  <br><br><b>Low</b><br>${forecast.low}
+  <br><br><b>Windspeed</b><br>${forecast.windspeed}
+  <br><br><b>Humidity</b><br>${forecast.humidity}% ${forecast.humidity > 55 ? 'Yikes' : ''}
+ </td>
+</tr>
+<tr><td style="padding:10px 0 40px 0;">
+  <h2 style="margin-bottom:7px;color:#9a9a9a;">Trains</h2>
+  <span style="display:inline-block;width:2em;height:2em;background:#9D9FA2;line-height:2em;text-align:center;font-weight:bold;color:#ffffff;border-radius:50%;margin-right:5px;">L</span> GOOD SERVICE
+  <br><br><span style="display:inline-block;width:2em;height:2em;background:#F55818;line-height:2em;text-align:center;font-weight:bold;color:#ffffff;border-radius:50%;margin-right:5px;">M</span> SERVICE CHANGE
+  <br><br>Posted: 05/07/2018  7:16PM  Southbound [B] trains are running local from Church Av to Sheepshead Bay because of a sick passenger at Church Av.  Expect delays in [B] and [Q] train service.
+</td></tr>
+</table>
+</body>
+</html>
