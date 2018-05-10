@@ -10,8 +10,8 @@ String.prototype.capitalize = function() {
     return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
 };
 
-// const sendTo = '"Zach Krall" <zach@zachkrall.com>';
-const sendTo = process.env.EMAIL_USERNAME;
+const sendTo = '"Zach Krall" <zach@zachkrall.com>';
+// const sendTo = process.env.EMAIL_USERNAME;
 const todayIs = moment().format('dddd, MMMM D');
 const weatherLocation = 'Brooklyn, NY';
 
