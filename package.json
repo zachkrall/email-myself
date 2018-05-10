@@ -1,7 +1,7 @@
 {
   "name": "email-myself",
   "version": "0.0.1",
-  "description": "",
+  "description": "email myself every morning :)",
   "main": "server.js",
   "scripts": {
     "start": "echo nope"
@@ -14,5 +14,17 @@
     "nodemailer": "^4.6.4",
     "random-int": "^1.0.0",
     "yahoo-weather": "^2.2.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachkrall/email-myself.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachkrall/email-myself/issues"
+  },
+  "homepage": "https://github.com/zachkrall/email-myself#readme"
 }
