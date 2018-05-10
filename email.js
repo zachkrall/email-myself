@@ -254,16 +254,20 @@ ${emailBody}
       html: htmlEmail // html body
   };
 
-console.log(mailOptions);
+console.log('================');
+console.log('from: ' + mailOptions.from);
+console.log('to: ' + mailOptions.to);
+console.log('subject: ' + mailOptions.subject);
+console.log('================');
 
 }).then( function(){
 
-  // transporter.sendMail(mailOptions, (error, info) => {
-  //     if (error) {
-  //       return console.error(error);
-  //     }
-  //     console.log('Message sent: %s', info.messageId);
-  // });
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.error(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+  });
 
   // console.log(mailOptions.text);
 
