@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "email myself every morning :)",
   "scripts": {
-    "start": "echo nope",
+    "start": "exit",
 		"send": "node email.js"
   },
   "dependencies": {

@@ -6,11 +6,7 @@ var MTA = require('mta-service-status');
 var h2p = require('html2plaintext');
 var randomInt = require('random-int');
 
-String.prototype.capitalize = function() {
-    return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
-};
-
-const sendTo = '"Zach Krall" <zach@zachkrall.com>';
+// const sendTo = 'zach@zachkrall.com';
 // const sendTo = process.env.EMAIL_USERNAME;
 const todayIs = moment().format('dddd, MMMM D');
 const weatherLocation = 'Brooklyn, NY';
@@ -181,9 +177,7 @@ Promise.all([getWeather, subwayM, subwayL]).then(function() {
                <span style="display:inline-block;width:2em;height:2em;background:#9D9FA2;line-height:2em;text-align:center;font-weight:bold;color:#ffffff;border-radius:50%;margin-right:5px;">L</span>
             </td>
             <td style="width:10px;">&nbsp;</td>
-            <td><b>${ MTAL.status.split(' ').map( function(word){
-              return word.capitalize();
-            }) }</b></td>
+            <td><b>${ MTAL.status }</b></td>
           </tr>
           ${ MTAL.html &&
           '<tr><td colspan="3" style="padding:10px 0 25px 0;font-size:0.87em;line-height:1.2;">'
@@ -197,9 +191,7 @@ Promise.all([getWeather, subwayM, subwayL]).then(function() {
               <span style="display:inline-block;width:2em;height:2em;background:#F55818;line-height:2em;text-align:center;font-weight:bold;color:#ffffff;border-radius:50%;margin-right:5px;">M</span>
             </td>
             <td style="width:10px;">&nbsp;</td>
-            <td><b>${ MTAM.status.split(' ').map( function(word){
-              return word.capitalize();
-            }) }</b></td>
+            <td><b>${ MTAM.status }</b></td>
             </td>
           </tr>
           ${ MTAM.html &&
@@ -255,23 +247,23 @@ ${emailBody}
 // console.log('html full: \n\n' + htmlEmail + '\n\n');
 
   mailOptions = {
-      from: '"krall bot" <krallbot@hackermail.com>', // sender address
-      to: process.env.EMAIL_USERNAME, // list of receivers
+      from: process.env.EMAIL_USERNAME, // sender address
+      to: 'zach@zachkrall.com', // list of receivers
       subject: emailSubject, // Subject line
       text: h2p(emailBody), // plain text body
       html: htmlEmail // html body
   };
 
-// console.log(mailOptions);
+console.log(mailOptions);
 
 }).then( function(){
 
-  transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return console.error(error);
-      }
-      console.log('Message sent: %s', info.messageId);
-  });
+  // transporter.sendMail(mailOptions, (error, info) => {
+  //     if (error) {
+  //       return console.error(error);
+  //     }
+  //     console.log('Message sent: %s', info.messageId);
+  // });
 
   // console.log(mailOptions.text);
 
