@@ -12,6 +12,7 @@
     "moment": "^2.22.1",
     "mta-service-status": "0.0.1",
     "nodemailer": "^4.6.4",
+    "random-int": "^1.0.0",
     "yahoo-weather": "^2.2.2"
   }
 }
