@@ -1,0 +1,33 @@
+{
+  "name": "email-myself",
+  "version": "0.0.1",
+  "description": "email myself every morning :)",
+  "scripts": {
+    "start": "exit",
+		"send": "node email.js"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "html2plaintext": "^2.0.1",
+    "moment": "^2.22.1",
+    "mta-service-status": "0.0.1",
+    "nodemailer": "^4.6.4",
+    "random-int": "^1.0.0",
+    "yahoo-weather": "^2.2.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachkrall/email-myself.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachkrall/email-myself/issues"
+  },
+  "homepage": "https://github.com/zachkrall/email-myself#readme",
+	"engines": {
+    "node": "9.10.1"
+  }
+}
