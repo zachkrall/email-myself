@@ -2,9 +2,9 @@
   "name": "email-myself",
   "version": "0.0.1",
   "description": "email myself every morning :)",
-  "main": "server.js",
   "scripts": {
-    "start": "echo nope"
+    "start": "echo nope",
+		"send": "node email.js"
   },
   "dependencies": {
     "dotenv": "^5.0.1",
