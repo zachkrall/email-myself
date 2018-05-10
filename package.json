@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/zachkrall/email-myself#readme",
 	"engines": {
-    "node": "^9.10.1"
+    "node": "9.10.1"
   }
 }
