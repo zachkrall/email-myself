@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/zachkrall/email-myself/issues"
   },
-  "homepage": "https://github.com/zachkrall/email-myself#readme"
+  "homepage": "https://github.com/zachkrall/email-myself#readme",
+	"engines": {
+    "node": "^9.10.1"
+  }
 }
